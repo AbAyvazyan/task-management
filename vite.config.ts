@@ -5,6 +5,7 @@ import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 
 export default defineConfig({
+  base: '/task-management/',
   plugins: [
     react(),
     svgr({
@@ -27,5 +28,4 @@ export default defineConfig({
     open: true,
     port: 3000,
   },
-  base: '/task-management/'
 });
