@@ -1,0 +1,19 @@
+@use '../../_variables' as vars;
+
+.headingPart{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &>h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.0036em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: vars.$text-bold-color
+  }
+}

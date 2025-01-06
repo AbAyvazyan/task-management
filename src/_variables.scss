@@ -1,0 +1,16 @@
+// Colors
+$white: #ffffff;
+$red: #FC3639;
+$blue: #0184CF;
+
+// Opacity levels
+$opacity-bold-text: 0.87; // 87%
+$opacity-regular-text: 0.60; // 60%
+$opacity-red: 0.60; // 60%
+$opacity-blue: 1.00; // 100%
+
+// Derived styles
+$text-bold-color: rgba($white, $opacity-bold-text);
+$text-regular-color: rgba($white, $opacity-regular-text);
+$red-color: rgba($red, $opacity-red);
+$blue-color: rgba($blue, $opacity-blue);

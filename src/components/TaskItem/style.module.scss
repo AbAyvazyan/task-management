@@ -1,0 +1,80 @@
+@use '../../_variables' as vars;
+
+.taskItem {
+  position: relative;
+  background-color: #FFFFFF1A;
+  height: 162px;
+  padding: 16px;
+  gap: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.taskItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.taskItemField {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF99;
+  margin-bottom: 8px;
+  margin-right: 26px;
+}
+
+.taskItemFieldValue {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: vars.$text-bold-color;
+}
+
+.editTask {
+  &>div{
+    margin-bottom: 8px;
+  }
+}
+
+button{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #FFFFFF14;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #FFFFFF33;
+    color: vars.$blue;
+  }
+}
+
+.editButton {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.buttonGroup{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: flex;
+  gap: 8px;
+}

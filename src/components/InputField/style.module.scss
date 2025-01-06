@@ -1,0 +1,17 @@
+@use '../../_variables' as vars;
+
+
+.input{
+  width: 200px;
+  height: 22px;
+  padding: 0 0 0 10px;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF80;
+  background-color: transparent;
+  color: vars.$white;
+  &:hover,&:focus{
+    border-color: vars.$blue;
+    outline: none;
+    cursor: pointer;
+  }
+}

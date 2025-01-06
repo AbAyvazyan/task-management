@@ -1,0 +1,41 @@
+@use '../../_variables' as vars;
+
+.searchWrapper {
+  position: relative;
+  display: inline-block; /* Ensures the wrapper takes the size of the input */
+
+  .searchBar {
+    width: 430px;
+    height: 40px;
+    padding: 0 20px 0 64px; /* Add space on the left for the search icon */
+    border-radius: 20px;
+    border: 1px solid rgba(vars.$white, 0.3);
+    background-color: rgba(vars.$white, 0.07);
+    cursor: pointer;
+    color: vars.$white; /* Ensures text is visible */
+
+    &:hover {
+      border-color: vars.$blue;
+    }
+
+    &:focus {
+      border-color: vars.$blue;
+      outline: none; /* Prevents default outline */
+      box-shadow: 0 0 4px vars.$blue; /* Optional: Adds subtle focus shadow */
+    }
+
+    &::placeholder {
+      color: rgba(vars.$white, 0.6); /* Style the placeholder text */
+    }
+  }
+
+  .searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Align with the padding-left of input */
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(vars.$white, 0.6);
+    pointer-events: none; /* Prevents clicks on the icon */
+  }
+}

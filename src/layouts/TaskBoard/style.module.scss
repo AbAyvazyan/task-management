@@ -1,0 +1,59 @@
+@use '../../_variables' as vars;
+
+.taskBoard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  gap: 16px; /* Space between columns */
+  padding: 20px;
+}
+
+.columnHeader {
+  display: flex;
+  align-items: center;  /* Vertically center the items */
+  gap: 8px;  /* Space between the icon and title */
+  justify-content: space-between;
+}
+
+.iconAndTitle{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.columnHeader svg {
+  width: 20px;
+  height: 20px;
+}
+
+.taskColumn {
+  background-color: #000000B2;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.taskColumn h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.0036em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: vars.$text-bold-color;
+}
+
+.addTask {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.4px;
+  color: #FFFFFF99;
+  cursor: pointer;  /* Makes the button clickable */
+  transition: color 0.3s ease;  /* Smooth color transition on hover */
+  &:hover{
+    color: vars.$blue;
+  }
+}
