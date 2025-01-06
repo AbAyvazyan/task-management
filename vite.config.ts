@@ -27,4 +27,5 @@ export default defineConfig({
     open: true,
     port: 3000,
   },
+  base: '/task-management/'
 });
