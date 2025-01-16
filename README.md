@@ -25,5 +25,6 @@ npm run start
 ### Deployed Version
 
 ```bash
-npm run start
+https://abayvazyan.github.io/task-management/
 ```
+
